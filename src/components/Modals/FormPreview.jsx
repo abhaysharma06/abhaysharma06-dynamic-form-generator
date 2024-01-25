@@ -196,14 +196,14 @@ const FormPreview = ({
           );
         })}
       </form>
-      {formData.length ? (
+      {formData?.length ? (
         <div
           className="formPreview__btn"
           onClick={(e) => {
             e.stopPropagation();
             if (formName?.length) {
               let persitData = JSON.parse(localStorage.getItem(`form`));
-              if (persitData.length) {
+              if (persitData?.length) {
                 let persitDataCopy = [...persitData];
                 persitDataCopy.push({
                   formName: formName,

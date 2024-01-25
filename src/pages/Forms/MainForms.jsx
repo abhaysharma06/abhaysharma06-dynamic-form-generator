@@ -11,9 +11,11 @@ const MainForms = () => {
 
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("form"));
-    let savedForms = [...data];
-    if (savedForms?.length) {
-      setAllFormData([...selectedForm, ...savedForms]);
+    if (data) {
+      let savedForms = [...data];
+      if (savedForms?.length) {
+        setAllFormData([...selectedForm, ...savedForms]);
+      }
     }
   }, [formCreatedCounter]);
 

@@ -11,7 +11,7 @@ const SelectedElementForm = ({ selectedOption, setFormData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      !addDropDownOption.length ||
+      !addDropDownOption?.length ||
       !addCheckboxOption?.length ||
       !addRadioOption?.length
     ) {
@@ -104,7 +104,7 @@ const SelectedElementForm = ({ selectedOption, setFormData }) => {
                 Add
               </button>
             </div>
-            {addRadioOption.length
+            {addRadioOption?.length
               ? addRadioOption.map((value, ind) => (
                   <div className="group" key={ind}>
                     <input
@@ -134,7 +134,7 @@ const SelectedElementForm = ({ selectedOption, setFormData }) => {
                 Add
               </button>
             </div>
-            {addCheckboxOption.length
+            {addCheckboxOption?.length
               ? addCheckboxOption.map((value, ind) => (
                   <div className="group" key={ind}>
                     <input
@@ -164,7 +164,7 @@ const SelectedElementForm = ({ selectedOption, setFormData }) => {
                 Add
               </button>
             </div>
-            {addDropDownOption.length
+            {addDropDownOption?.length
               ? addDropDownOption.map((value, ind) => (
                   <div className="group" key={ind}>
                     <input
