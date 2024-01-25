@@ -1,0 +1,37 @@
+.btn{
+    &__prmiarybtn, &__secondarybtn,&__add{
+        font-weight: 500;
+        font-size: 1.4rem;
+        gap: 1rem;
+        justify-content: center;
+        padding: 1.2rem 1rem;
+        cursor: pointer;
+        border-radius: 0.4rem; 
+    }
+    &__prmiarybtn{
+        color: $color-heading-text;
+        border:0.1rem solid $color-green;
+        background-color:$color-green ;
+    }
+    &__secondarybtn{
+        color:$color-green;
+        border:0.1rem solid $color-green; 
+        background-color:transparent;
+
+    }
+    &__add{
+        color: $color-heading-text;
+        padding: 0.4rem 1rem;
+        border:0.1rem solid $color-yellow; 
+        background-color:transparent;
+    }
+    &__remove{
+        color: $color-red;
+        border:0.1rem solid $color-red; 
+        padding: 0.4rem 1rem;
+    }
+    &__disable{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

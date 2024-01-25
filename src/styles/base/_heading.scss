@@ -1,0 +1,28 @@
+@import './variables';
+
+.heading-main{
+    font-size: 2rem;
+    color: $color-heading-text;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.heading-section{
+    font-size: 1.6rem;
+    color: $color-section-text;
+    font-weight: 500;
+}
+
+.heading-label{
+    font-size: 1.2rem;
+    color: $color-label-text;
+    font-weight: 500;
+}
+
+.heading-value{
+    font-size: 1.2rem;
+    color: $color-label-text;
+    font-weight: 500;
+}
+
+
